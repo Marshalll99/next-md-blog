@@ -5,9 +5,9 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Qurashi Akeel',
-    site_url: 'https://mdx.netlify.app/',
-    feed_url: 'https://mdx.netlify.app/' + 'feed.xml'
+    title: 'M Marshalll',
+    site_url: 'https://marshalll.netlify.app/',
+    feed_url: 'https://marshalll.netlify.app/' + 'feed.xml'
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
