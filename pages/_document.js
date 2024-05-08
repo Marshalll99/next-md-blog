@@ -4,15 +4,16 @@ export default function Document() {
   const meta = {
     title: 'M Marshall\'s Portfolio | Blog',
     description: 'The portfolio website for M Marshall',
-    image: '/images/letterM.jpg'
+    image: '/images/logo.jpg'
   }
 
   return (
     <Html lang="en">
       <Head>
         <meta name="robots" content="follow, index" />
-        <link rel="icon" type="image/jpg" href="/images/letterM.jpg"/>
+        <link rel="icon" type="image/jpg" href={meta.image}/>
         <meta name="description" content={meta.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
